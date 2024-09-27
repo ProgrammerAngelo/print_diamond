@@ -8,4 +8,18 @@ def odd_integer():
     else:
         print("Invalid. Please enter an odd number ")
         return odd_integer() #for valid input
+def print_diamond():
+    number = odd_integer()
+
+    mid = number // 2
+    
+    for i in range(mid + 1):
+        print(' ' * (mid - i), end ='')
+        print('*' * (2 * i + 1))
+
+    for i in range(mid -1,-1,-1):
+        print(' ' * (mid - i), end ='')
+        print('*' * (2 * i + 1))
+
+print_diamond()
 #method for looping that says"Please provide an odd integer"
