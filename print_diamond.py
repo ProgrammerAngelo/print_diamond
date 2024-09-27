@@ -9,17 +9,19 @@ def odd_integer():
         print("Invalid. Please enter an odd number ")
         return odd_integer() #for valid input
 def print_diamond():
-    number = odd_integer()
+    number = odd_integer()#for getting the valid integer
 
+    #for calculating the mid point of diamond
     mid = number // 2
     
+    #for calculating the top of the diamond
     for i in range(mid + 1):
         print(' ' * (mid - i), end ='')
         print('*' * (2 * i + 1))
-
+    
+    #for calculating the bottom of the diamond
     for i in range(mid -1,-1,-1):
         print(' ' * (mid - i), end ='')
         print('*' * (2 * i + 1))
 
 print_diamond()
-#method for looping that says"Please provide an odd integer"
